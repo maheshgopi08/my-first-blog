@@ -1,7 +1,8 @@
 .page-header {
-    background-color: #ff0400;
+    background-color: #00afff;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    clear: both
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -13,9 +14,16 @@
 .content {
     margin-left: 40px;
 }
-
-h1, h2, h3, h4 {
+h1{
     font-family: 'Shadows Into Light', cursive;
+
+}
+
+
+h2, h3, h4 {
+    font-family: 'Shadows Into Light', cursive;
+    background-image: url(../images/home.png);
+    
 }
 
 .date {
@@ -45,3 +53,8 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+

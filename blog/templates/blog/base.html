@@ -6,6 +6,26 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        
+        <style>
+			
+			#menu {
+    		background-color:#00afff;
+    		height:300px;
+    		width:100px;
+    		float:right;
+    		padding:5px;
+				}
+
+			#footer {
+    		background-color:#00afff;
+    		color:black;
+    		clear:both;
+    		text-align:center;
+    		padding:5px; 
+			}
+		</style>
+        
     </head>
     <body>
         <div class="page-header">
@@ -15,9 +35,16 @@
     			<p class="top-menu">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
     		{% else %}
     			<a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
-    		{% endif %}            
-            <h1><a href="/">EcGate Website</a></h1>
+    		{% endif %} 
+    		
+            <h1><a href="/">EcGate Website<sub><small>Make your way easy</small></sub></a></h1>
+            
         </div>
+        <div class="menu">
+        	<a href="/">           
+            	<img src="{% static 'images/home.png' %}" alt="" width="30" height="30"/>
+            </a>
+        </div>   
 
        <div class="content container">
     <div class="row">
@@ -27,5 +54,8 @@
         </div>
     </div>
 </div>
+	<div id="footer">
+		Copyright © Panchatantra Solutions
+	</div>
     </body>
 </html>
